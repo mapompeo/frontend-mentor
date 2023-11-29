@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    color: rgb(28, 32, 34);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    transition: all 0.2s;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+
+.box:hover {
+    transition: all 0.2s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+    border-radius: 20px;
+    width: 290px;
+    height: auto;
+}
+
+.box p {
+    padding: 20px;
+}
+
+footer {
+    transition: all 0.2s;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: rgb(212, 212, 212);
+    padding: 8px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+footer img {
+    padding-left: 8px;
+    width: auto;
+    height: 32px;
+}
+
+button {
+    transition: all 0.2s;
+    background-color: rgb(212, 212, 212);
+    padding: 8px;
+    width: 50%;
+    border-radius: 20px;
+    font-weight: bolder;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+
+button:hover {
+    transition: all 0.2s;
+    transform: scale(1.02);
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 100px 0;
+        flex-direction: column;
+    }
+}
