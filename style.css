@@ -22,22 +22,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    text-align: center;
+    min-height: 100vh;
 }
 
 .box {
     transition: all 0.2s;
     background-color: #f0f0f0;
-    padding: 20px;
     border-radius: 20px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 300px;
+    width: max-content;
+    height: max-content;
     margin: 20px;
+    padding: 20px;
 }
 
 .box:hover {
@@ -52,22 +49,15 @@ main {
 }
 
 .box p {
-    padding: 20px;
+    margin: 20px;
 }
 
 footer {
-    transition: all 0.2s;
-    width: 500px;
     display: flex;
-    flex-direction: column;
-    text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    background-color: rgb(212, 212, 212);
-    padding: 8px;
-    border-radius: 20px;
-    font-weight: bolder;
+    text-align: center;
+    padding: 20px 0;
 }
 
 footer img {
@@ -76,27 +66,57 @@ footer img {
     height: 32px;
 }
 
-button {
+.conteudo-footer {
     transition: all 0.2s;
-    background-color: rgb(212, 212, 212);
-    padding: 8px;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 280px;
     border-radius: 20px;
-    font-weight: bolder;
-    border: solid 2px rgba(0, 0, 0, 0);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+    border: solid 2px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
+.conteudo-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(28, 32, 34); 
+}
+
+.name {
+    font-weight: bolder;
+}
+
+.botao-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: rgb(28, 32, 34); 
     transition: all 0.2s;
-    transform: scale(1.02);
+    background-color: rgb(211, 211, 211);
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: solid 2px rgba(0, 0, 0, 0.1);
+}
+
+.botao-box:hover, .conteudo-footer:hover {
+    transition: all 0.2s;
     border: solid 2px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
 }
 
 @media (max-width: 800px) {
     main {
-        padding: 100px 0;
+        display: flex;
+        justify-content: center;
         flex-direction: column;
+        padding: 50px 0;
     }
 }
