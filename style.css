@@ -103,7 +103,7 @@ footer img {
     background-color: rgb(211, 211, 211);
     width: 100px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 16px;
     font-weight: bold;
     border: solid 2px rgba(0, 0, 0, 0.1);
 }
