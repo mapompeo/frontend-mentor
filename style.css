@@ -24,6 +24,8 @@ main {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .box {
@@ -111,7 +113,7 @@ footer img {
     cursor: pointer;
     background-color: transparent;
 }
-
+/* 
 @media (max-width: 800px) {
     main {
         display: flex;
@@ -119,4 +121,4 @@ footer img {
         flex-direction: column;
         padding: 50px 0;
     }
-}
+} */
