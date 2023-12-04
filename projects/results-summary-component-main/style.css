@@ -36,6 +36,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 20px;
 }
 
 .box {
@@ -255,6 +256,7 @@ img {
     main {
         align-items: flex-start;
         height: fit-content;
+        margin: 0;
     }
 
     .result {
