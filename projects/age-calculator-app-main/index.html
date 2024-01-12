@@ -15,20 +15,27 @@
   <main>
     <div class="card">
         <div class="top">
-          <p>Day</p>
-          <input type="number" id="dd" placeholder="DD">
-        <div class="top">
-          <p>Month</p>
-          <input type="number" id="dd" placeholder="MM">
-        <div class="top">
-          <p>Year</p>
-          <input type="number" id="dd" placeholder="YYYY">
+          <div class="inputsText">
+            <p>DAY</p>
+            <input type="number" id="dd" placeholder="DD">
+          </div>
+          <div class="inputsText">
+            <p>MONTH</p>
+            <input type="number" id="dd" placeholder="MM">
+          </div>
+          <div class="inputsText">
+            <p>YEAR</p>
+            <input type="number" id="dd" placeholder="YYYY">
+          </div>
         </div>
-        <img src="assets/images/icon-arrow.svg" alt="">
+        <div class="middle">
+          <hr>
+          <button class="arrow"><img src="assets/images/icon-arrow.svg" alt="Arrow down"></button>
+        </div>
         <div class="bottom">
-          -- years
-          -- months
-          -- days
+          <div class="result"><div id="">--</div> years</div>
+          <div class="result"><div id="">--</div> months</div>
+          <div class="result"><div id="">--</div> days</div>
         </div>
     </div>
   </main>
