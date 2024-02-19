@@ -17,32 +17,32 @@
         <div class="top">
           <div class="inputsText">
             <p>DAY</p>
-            <input type="number" id="dd" placeholder="DD">
+            <input type="number" id="d" placeholder="DD">
           </div>
           <div class="inputsText">
             <p>MONTH</p>
-            <input type="number" id="dd" placeholder="MM">
+            <input type="number" id="m" placeholder="MM">
           </div>
           <div class="inputsText">
             <p>YEAR</p>
-            <input type="number" id="dd" placeholder="YYYY">
+            <input type="number" id="y" placeholder="YYYY">
           </div>
         </div>
         <div class="middle">
           <hr>
-          <button class="arrow"><img src="assets/images/icon-arrow.svg" alt="Arrow down"></button>
+          <button onclick="calcularIdade()" class="arrow"><img src="assets/images/icon-arrow.svg" alt="Arrow down"></button>
         </div>
         <div class="bottom">
-          <div class="result"><div id="">--</div> years</div>
-          <div class="result"><div id="">--</div> months</div>
-          <div class="result"><div id="">--</div> days</div>
+          <div class="result-text"><div class="result" id="resultYears">--</div>years</div>
+          <div class="result-text"><div class="result" id="resultMonths">--</div>months</div>
+          <div class="result-text"><div class="result" id="resultDays">--</div>days</div>
         </div>
     </div>
   </main>
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/mapompeo" target="_blank" >Matheus Pompeo</a>.
     </div>
   </footer>
 </body>

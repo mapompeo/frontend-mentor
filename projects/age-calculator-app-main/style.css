@@ -1,15 +1,13 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
 :root {
     --White: hsl(0, 0%, 100%);
     --Off-white: hsl(0, 0%, 94%);
-    --Light-rey: hsl(0, 0%, 86%);
+    --Light-grey: hsl(0, 0%, 86%);
     --Smokey-grey: hsl(0, 1%, 44%);
     --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Second-purple: rgb(112, 46, 255);
+    --Light-red: hsl(0, 100%, 67%);
 }
-
 
 * {
     margin: 0;
@@ -33,10 +31,15 @@ main {
     height: 100vh;
 }
 
+
+/* ------------------------------------------ */
+
+
 .card {
     border-radius: 24px 24px 120px 24px;
     background-color: var(--White);
-    width: 800px;
+    width: 650px;
+    padding: 40px;
 }
 
 .inputsText {
@@ -49,7 +52,7 @@ main {
 
 .inputsText input {
     border-radius: 5px;
-    border: var(--Light-rey) solid 1px;
+    border: var(--Light-grey) solid 1px;
     font-size: 32px;
     font-weight: 700;
     padding: 10px;
@@ -61,28 +64,64 @@ main {
 .top {
     display: flex;
     color: var(--Smokey-grey);
-    margin: 30px;
 }
 
-.result {
+button {
+    transition: all 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--Second-purple);
+}
+
+
+/* ------------------------------------------ */
+
+
+.middle {
     display: flex;
+    align-items: center;
 }
 
 hr {
-    border: 1px solid black;
-    width: 300px;
+    border: 1px solid var(--Light-grey);
+    display: block;
+    width: 550px;
 }
 
 .arrow {
     padding: 10px;
     border-radius: 1000px;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: var(--Purple);
 }
 
 
+/* ------------------------------------------ */
 
 
-button:hover {
-    background-color: beige;
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-text {
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--Off-black);
+}
+
+.result {
+    color: var(--Purple);
+    font-size: 70px;
+    font-weight: 800;
+    font-style: italic;
 }
