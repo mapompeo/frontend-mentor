@@ -17,6 +17,7 @@
     font-size: 15px;
     font-weight: 700;
     text-align: center;
+    color: var(--DarkGrayishBlue);
 }
 
 main {
@@ -42,6 +43,12 @@ main {
     padding: 16px;
 }
 
-#monthly p, #annually p {
+.white {
+    color: var(--VeryLightGrayishBlue);
+    font-size: 48px;
+}
+
+.monthly p, .annually p {
+    color: var(--DarkGrayishBlue);
     font-size: 48px;
 }
