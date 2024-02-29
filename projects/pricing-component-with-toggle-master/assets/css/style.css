@@ -1,8 +1,3 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-/* Weight: 700 */
-
 :root {
     --LinearGradientFrom: hsl(236, 72%, 79%);
     --LinearGradientTo:  hsl(237, 63%, 64%);
@@ -18,37 +13,234 @@
     font-weight: 700;
     text-align: center;
     color: var(--DarkGrayishBlue);
+    padding: 0;
+    margin: 0;
 }
 
-main {
+body {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* TOP */
+
+h1 {
+    z-index: 1;
 }
 
 .toggle {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
+
+/* END TOP */
+
+
+
+/* MAIN */
 
 .cards {
     display: flex;
     justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .card {
-    border: solid 1px black;
-    padding: 16px;
+    box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    width: 250px;
+    background-color: white;
 }
 
-.white {
+.cardLeft {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.cardRight {
+    border-radius: 0px 8px 8px 0px;
+}
+
+.cardMain {
+    background-image: -webkit-linear-gradient(270deg, var(--LinearGradientFrom), var(--LinearGradientTo));
+    height: 390px;
+}
+
+.cardMain p {
     color: var(--VeryLightGrayishBlue);
-    font-size: 48px;
+}
+
+.monthly {
+    display: none;
 }
 
 .monthly p, .annually p {
     color: var(--DarkGrayishBlue);
+    font-size: 56px;
+    margin: 8px;
+}
+
+h2 {
+    margin: 8px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+}
+
+#white {
+    color: var(--VeryLightGrayishBlue);
     font-size: 48px;
+}
+
+#whiteText {
+    font-size: 15px;
+    color: var(--VeryLightGrayishBlue);
+}
+
+hr {
+    width: 100%;
+    size: 20px;
+    border-color: rgba(255, 255, 255, 0.2); 
+}
+
+span {
+    font-size: 28px;
+    margin-right: 6px;
+}
+
+button {
+    transition: all 0.2s;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    border: none;
+    margin-top: 16px;
+}
+
+#white {
+    font-size: 56px;
+}
+
+.button-color {
+    background-image: -webkit-linear-gradient(0deg, var(--LinearGradientFrom), var(--LinearGradientTo));
+    color: var(--VeryLightGrayishBlue);
+    border: solid 1px var(--LinearGradientFrom);
+}
+
+.button-white {
+    color: var(--LinearGradientTo);
+    border: solid 1px var(--VeryLightGrayishBlue);
+}
+
+.white-dollar {
+    color: var(--VeryLightGrayishBlue);
+}
+
+button:hover {
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.button-color:hover {
+    background-image: none;
+    border: solid 1px var(--LinearGradientFrom);
+    color: var(--LinearGradientFrom);
+}
+
+.button-white:hover {
+    background-color: transparent;
+    border: solid 1px var(--VeryLightGrayishBlue);
+    color: var(--VeryLightGrayishBlue);
+}
+
+/* END MAIN */
+
+
+/* BACKGROUND IMAGE */
+
+#bg-top {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+#bg-bottom {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* END BACKGROUND IMAGE */
+
+
+/* FOOTER */
+
+.attribution {
+    font-size: 11px; text-align: center;
+    position: fixed;
+    bottom: 20px;
+    z-index: 4;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* END FOOTER */
+
+
+/* RESPONSIVE */
+
+@media  (max-width: 1000px) {
+    body {
+        overflow: auto;
+        height: auto;
+    }
+
+    .attribution {
+        margin: 48px 0px;
+        position: relative;
+    }
+
+    #bg-bottom {
+        display: none;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 16px;
+        border-radius: 8px;
+    }
+
+    .cardMain {
+        height: auto;
+    }
+
+    .monthly p, .annually p {
+        margin-bottom: 16px;
+    }
 }

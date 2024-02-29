@@ -11,51 +11,65 @@
   <title>Frontend Mentor | Pricing component with toggle</title>
 </head>
 <body>
+  <img id="bg-top" src="images/bg-top.svg" alt="image">
+  <img id="bg-bottom" src="images/bg-bottom.svg" alt="image">
   <h1>Our Pricing</h1>
   <div class="toggle">
     <p>Annually</p>
-    <input type="radio" id="">
+    <input type="checkbox" id="toggle">
     <p>Monthly</p>
   </div>
   <div class="cards">
     <div class="card cardLeft">
       <h2>Basic</h2>
-      <div class="monthly">
-        <p>&dollar;19.99</p>
+      <div id="monthly" class="monthly">
+        <p><span>&dollar;</span>19.99</p>
       </div>
-      <div class="annually">
-        <p>&dollar;199.99</p>
+      <div id="annually" class="annually">
+        <p><span>&dollar;</span>199.99</p>
       </div>
+      <hr>
       <p>500 GB Storage</p>
+      <hr>
       <p>2 Users Allowed</p>
+      <hr>
       <p>Send up to 3 GB</p>
-      <button>Learn More</button>
+      <hr>
+      <button class="button-color">LEARN MORE</button>
     </div>
     <div class="card cardMain">
-      <h2>Professional</h2>
-      <div id="monthly">
-        <p class="white">&dollar;24.99</p>
+      <h2 id="whiteText">Professional</h2>
+      <div id="monthly" class="monthly">
+        <p id="white"><span  class="white-dollar">&dollar;</span>24.99</p>
       </div>
-      <div class="annually">
-        <p class="white">&dollar;299.99</p>
+      <div id="annually" class="annually">
+        <p id="white"><span class="white-dollar">&dollar;</span>249.99</p>
       </div>
+      <hr>
       <p>1 TB Storage</p>
+      <hr>
       <p>5 Users Allowed</p>
+      <hr>
       <p>Send up to 10 GB</p>
-      <button>Learn More</button>
+      <hr>
+      <button class="button-white">LEARN MORE</button>
     </div>
     <div class="card cardRight">
       <h2>Master</h2>
-      <div class="monthly">
-        <p>&dollar;39.99</p>
+      <div id="monthly" class="monthly">
+        <p><span>&dollar;</span>39.99</p>
       </div>
-      <div class="annually">
-        <p>&dollar;399.99</p>
+      <div id="annually" class="annually">
+        <p><span>&dollar;</span>399.99</p>
       </div>
+      <hr>
       <p>2 TB Storage</p>
+      <hr>
       <p>10 Users Allowed</p>
+      <hr>
       <p>Send up to 20 GB</p>
-      <button>Learn More</button>
+      <hr>
+      <button class="button-color">LEARN MORE</button>
     </div>
   </div>
   <div class="attribution">
